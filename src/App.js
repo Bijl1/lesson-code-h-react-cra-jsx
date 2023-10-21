@@ -3,6 +3,7 @@ import Header from './components/Header';
 import droneLogo from './images/drone.png';
 
 const element = <h1>🖖Hello world!</h1>;
+//Adding comments
 const heading = <h1> React is cool!</h1>;
 
 const quote = {
@@ -27,8 +28,10 @@ const divElement = <div id={theId}>div with an id</div>
 function App() {
   return (
     <div className="App">
+      
       {element}
       {divElement}
+      
       <img src={droneLogo} alt="Drone image" />
       {heading}
       <h3>
@@ -44,7 +47,7 @@ function App() {
 
       <h4>{quote.secondQuote.toLocaleUpperCase()}</h4>
 
-      <h4>
+      <h4>{/*Adding comment in JSX*/}
         Capitalized first letter: { capitalizeFirstLetter(firstName)} { capitalizeFirstLetter(lastName)}
       </h4>
 
