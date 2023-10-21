@@ -1,5 +1,6 @@
 import './App.css';
 import Header from './components/Header';
+import droneLogo from './images/drone.png';
 
 const element = <h1>🖖Hello world!</h1>;
 const heading = <h1> React is cool!</h1>;
@@ -20,10 +21,15 @@ function capitalizeFirstLetter(str) {
   return str[0].toUpperCase() + str.slice(1);
 }
 
+const theId = 'home';
+const divElement = <div id={theId}>div with an id</div>
+
 function App() {
   return (
     <div className="App">
       {element}
+      {divElement}
+      <img src={droneLogo} alt="Drone image" />
       {heading}
       <h3>
         Quote of the day, {quote.firstQuote}!
